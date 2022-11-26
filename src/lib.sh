@@ -1,3 +1,5 @@
 function bashenv.zsh() {
-  source <(bash -lc 'declare -px')
+  set +m
+  source <(bash -lic 'declare -px')
+  set -m
 };
