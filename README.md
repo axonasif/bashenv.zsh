@@ -22,3 +22,5 @@ Now restart your shell:
 ```bash
 exec $0 -l
 ```
+
+Note: This is auto installed from [dotsh](https://github.com/axonasif/dotsh).
