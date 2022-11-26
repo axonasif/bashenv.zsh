@@ -11,9 +11,9 @@ I highly encourage you to read the (tiny) script before proceeding: [./src/lib.s
 After you've understood what it does, run the following command(s):
 
 ```bash
-data="$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")"
+data="$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")bashenv.zsh"
 test -e /etc/zshrc && zshrc=/etc/zshrc || zshrc=/etc/zsh/zshrc
-if test -e "$zshrc"; then data="$(printf '%s\n' "$(< $zshrc)" "$data")"; fi
+if test -e "$zshrc"; then data="$(printf '%s\n' "$data" "$(< $zshrc)")"; fi
 \echo "$data" | sudo sh -c "mkdir -p ${zshrc%/*} && tee -a $zshrc" 
 ```
 
