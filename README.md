@@ -12,15 +12,13 @@ After you've understood what it does, run the following command(s):
 
 ```bash
 data="$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")bashenv.zsh"
-test -e /etc/zshrc && zshrc=/etc/zshrc || zshrc=/etc/zsh/zshrc
-if test -e "$zshrc"; then data="$(printf '%s\n' "$data" "$(< $zshrc)")"; fi
-\echo "$data" | sudo sh -c "mkdir -p ${zshrc%/*} && tee -a $zshrc" 
+\echo "$data" >> ~/.zshrc
 ```
 
 Now restart your shell:
 
 ```bash
-exec $0 -l
+exec zsh -l
 ```
 
 Note: This is auto installed from [dotsh](https://github.com/axonasif/dotsh).
