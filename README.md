@@ -12,7 +12,7 @@ After you've understood what it does, run the following command(s):
 
 ```bash
 data="$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")bashenv.zsh"
-\echo "$data" >> ~/.zshrc
+echo "$data" >> ~/.zshrc
 ```
 
 Now restart your shell:
