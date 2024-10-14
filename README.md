@@ -11,7 +11,7 @@ I highly encourage you to read the (tiny) script before proceeding: [./src/lib.s
 After you've understood what it does, run the following command(s):
 
 ```bash
-data="$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/master/src/lib.sh")bashenv.zsh"
+data="$(curl -sSL "https://raw.githubusercontent.com/axonasif/bashenv.zsh/87cf0ce8dc54b0feb39142a28a1d569841b61ca8/src/lib.sh")bashenv.zsh"
 echo "$data" >> ~/.zshrc
 ```
 
